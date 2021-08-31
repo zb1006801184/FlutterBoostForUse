@@ -7,6 +7,8 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+
+//#import "FlutterBoostDemo-Swift.h"
 #import "BoostDelegate.h"
 #import <flutter_boost/FlutterBoost.h>
 
@@ -25,6 +27,8 @@
     [self.window makeKeyAndVisible];
     BoostDelegate *boostDelegate = [[BoostDelegate alloc]init];
     boostDelegate.navigationController = nav;
+    
+    
     [FlutterBoost.instance setup:application delegate:boostDelegate callback:^(FlutterEngine *engine) {
         
     }];

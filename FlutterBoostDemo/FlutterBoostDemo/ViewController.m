@@ -33,7 +33,7 @@
     //路由的名称
     options.pageName = @"homePage";
     //传入的参数
-    options.arguments = @{@"params":@"参数",@"":@""};
+    options.arguments = @{@"params":@"参数",@"isPresent":@"NO"};
     //跳转完成
     options.completion = ^(BOOL value) {
         NSLog(@"跳转完成了");
