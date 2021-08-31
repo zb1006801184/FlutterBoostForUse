@@ -26,7 +26,7 @@ class BoostDelegate: NSObject,FlutterBoostDelegate {
         
         if(pageName == "ViewController"){
             //这里接收传入的参数
-            let data:String = arguments?["data"] as? String ?? ""
+//            let data:String = arguments?["data"] as? String ?? ""
             let homeVC = ViewController()
 //            homeVC.dataString = data
             targetViewController = homeVC

@@ -21,7 +21,7 @@ class _HomePageState extends State<HomePage> {
             ),
           ),
           onTap: () {
-            //返回原生
+            //返回
             BoostNavigator.instance.pop({'params': 'flutter'});
           },
         ),
@@ -37,11 +37,11 @@ class _HomePageState extends State<HomePage> {
             ),
           ),
           onTap: () {
-            //跳转flutter
+            //跳转 (name能在flutter routerMap中找到 回调 pushFlutterRoute，否则回调pushNativeRoute)
             BoostNavigator.instance.push(
-              "ViewController", //required
-              // withContainer: true,
-              arguments: {'params': 'zz'}, //optional
+              "simplePage", //required  跳转的页面
+              withContainer: false, //是否开启新的容器
+              arguments: {'params': 'zz'}, //参数
             );
             //跳转原生
           },
